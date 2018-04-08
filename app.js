@@ -3,10 +3,9 @@ const mongoose = require('mongoose');
 const passport = require('passport');
 
 //Passport config
-require('./config/passport'),(passport);
+require('./config/passport')(passport);
 
 //load Routes
-
 const auth = require('./routes/auth');
 //load keys
 const keys = require('./config/keys');
